@@ -1,0 +1,21 @@
+<Addin id="AutoreplaceAddin"
+ namespace="Tomboy"
+ name="AutoReplace"
+ author="Francisco José Rodríguez Bogado (bogado@qinn.es)"
+ description="Changes arrows in the same way that LibreOffice, for instace. Plus '---' becomes a (sort of) horizontal separator line."
+ category="Tools"
+ defaultEnabled="false"
+ version="0.1">
+ 
+ <Runtime>
+     <Import assembly="Autoreplace.dll" />
+ </Runtime>
+ 
+ <Dependencies>
+     <Addin id="Tomboy" version="0.10" />
+ </Dependencies>
+ 
+ <Extension path="/Tomboy/NoteAddins">
+     <NoteAddin type="Tomboy.Autoreplace.AutoreplaceAddin" />
+ </Extension>
+</Addin>
